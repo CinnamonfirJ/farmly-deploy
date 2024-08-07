@@ -1,6 +1,7 @@
 import { Rokkitt } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
+import Head from "next/head";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
+      <Head>
+        <meta property='og:image' content='/assets/thumbnail.png' />
+      </Head>
       <body className={twMerge(rokkitt.variable, " antialiased")}>
         {children}
       </body>
