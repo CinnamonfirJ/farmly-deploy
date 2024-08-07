@@ -13,9 +13,9 @@ export const LogoTicker = () => {
       <div className=' container'>
         <div className='flex flex-col gap-8 items-center'>
           <div className='  flex-1 md:flex-none text-2xl text-black/70'>
-            <h2>Trusted</h2>
+            <h2>Trusted By</h2>
           </div>
-          <div className='flex flex-1 overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] '>
+          <div className='flex flex-1 max-w-md md:max-w-2xl lg:max-w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] '>
             <motion.div
               initial={{ translateX: "-50%" }}
               animate={{ translateX: "0" }}
@@ -24,7 +24,7 @@ export const LogoTicker = () => {
                 duration: 30,
                 ease: "linear",
               }}
-              className=' flex flex-none gap-14 pr-14'
+              className=' flex flex-none gap-14 pr-14 '
             >
               {[
                 acmeLogo,
