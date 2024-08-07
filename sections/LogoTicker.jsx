@@ -15,7 +15,7 @@ export const LogoTicker = () => {
           <div className='  flex-1 md:flex-none text-2xl text-black/70'>
             <h2>Trusted By</h2>
           </div>
-          <div className='flex flex-1 max-w-md md:max-w-2xl lg:max-w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] '>
+          <div className='flex flex-1 max-w-sm md:max-w-2xl lg:max-w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] '>
             <motion.div
               initial={{ translateX: "-50%" }}
               animate={{ translateX: "0" }}
