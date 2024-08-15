@@ -4,6 +4,7 @@ import Stars from "@/assets/stars.png";
 import Tomatoe from "@/assets/tomatoe.png";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
 
 export const Hero = () => {
   const sectionRef = useRef(null);
@@ -113,7 +114,13 @@ export const Hero = () => {
           AI technology.
         </p>
         <div className='flex justify-center mt-5'>
-          <Button>Download</Button>
+          <Link
+            href={
+              "https://demo.roboflow.com/tomato-detection-apigm/3?publishable_key=rf_7h2UBDeY2TWQiccDDWFNYjPqZSH2"
+            }
+          >
+            <Button>Try It Now!</Button>
+          </Link>
         </div>
       </div>
     </motion.section>
